@@ -57,7 +57,7 @@ Enhance the live video section with custom controls or multiple streams.
 
  Credits
 
-Created by: GROUP
+Created by: Spl_KE
 
 
 
