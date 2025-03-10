@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute to Tim Berners-Lee</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tribute to Tim Berners-Lee</h1>
+    </header>
+    <nav>
+        <a href="#intro">Introduction</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="content" id="intro">
+            <h2>Introduction</h2>
+            <img src="https://i.postimg.cc/qRnh05Qk/IMG-20250306-205948-438.jpg" alt="Tim Berners-Lee" onclick="showRandomFact()">
+            <p>Sir Tim Berners-Lee (born 1955) is a British computer scientist and the inventor of the World Wide Web. I admire him for his visionary innovation, humility, and dedication to making information accessible to all.</p>
+        </div>
+        <div class="content" id="achievements">
+            <h2>Achievements</h2>
+            <p>In 1989, while working at CERN, Tim Berners-Lee proposed a system that became the World Wide Web, combining hypertext with the internet. He wrote the first web browser and server, launching the web in 1991. His decision to make the web open and free has transformed how we communicate, work, and learn.</p>
+        </div>
+        <div class="content" id="contact">
+            <h2>Contact & Share</h2>
+            <p>Share this tribute with the world!</p>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" onclick="sharePlatform(event, 'facebook')"><img src="https://i.postimg.cc/m24y83XK/facebook-2-logo-svgrepo-com.png" alt="Facebook" class="social-icon"></a>
+                <a href="https://x.com" target="_blank" onclick="sharePlatform(event, 'x')"><img src="https://i.postimg.cc/mDVpM5VB/twitter-color-svgrepo-com.png" alt="X" class="social-icon"></a>
+                <a href="https://instagram.com" target="_blank" onclick="sharePlatform(event, 'instagram')"><img src="https://i.ibb.co/B2sHBgCz/instagram.png" alt="Instagram" class="social-icon"></a>
+            </div>
+            <button onclick="sharePage()"><img src="https://i.postimg.cc/DyMGXqX9/share-svgrepo-com.png" alt="Share" class="share-icon"> Share This Page</button>
+        </div>
+    </div>
+    <div id="factModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">×</span>
+            <p id="factText"></p>
+        </div>
+    </div>
+    <footer>
+        <p>Created by [Your Name] - March 06, 2025</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
